@@ -1,0 +1,19 @@
+{
+  "name": "@potatto/tokens",
+  "version": "0.0.1",
+  "description": "Potatto Design System — design tokens (CSS vars + TS types)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./css": "./dist/variables.css",
+    "./themes/*": "./dist/themes/*.css"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.3"
+  }
+}

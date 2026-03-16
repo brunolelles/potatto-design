@@ -1,0 +1,96 @@
+{
+  "interactive": {
+    "action": {
+      "primary": {
+        "foreground": {
+          "default":  { "$value": "{color.core.primary.07}", "$type": "color" },
+          "hovered":  { "$value": "{color.core.primary.08}", "$type": "color" },
+          "pressed":  { "$value": "{color.core.primary.09}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m1}", "$type": "color" }
+        },
+        "surface": {
+          "default":  { "$value": "{color.core.primary.07}", "$type": "color" },
+          "hovered":  { "$value": "{color.core.primary.08}", "$type": "color" },
+          "pressed":  { "$value": "{color.core.primary.09}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.light.l4}", "$type": "color" }
+        },
+        "content": {
+          "on-foreground": {
+            "default":  { "$value": "{color.neutral.grey-air.gust.light.l1}", "$type": "color" },
+            "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m2}", "$type": "color" }
+          },
+          "on-surface": {
+            "default":  { "$value": "{color.core.primary.07}", "$type": "color" },
+            "accent":   { "$value": "{color.core.primary.08}", "$type": "color" },
+            "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m1}", "$type": "color" }
+          }
+        },
+        "border": {
+          "default":  { "$value": "{color.core.primary.07}", "$type": "color" },
+          "accent":   { "$value": "{color.core.primary.08}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.light.l5}", "$type": "color" }
+        }
+      },
+      "neutral": {
+        "foreground": {
+          "default":  { "$value": "{color.neutral.grey-air.gust.dark.d1}", "$type": "color" },
+          "hovered":  { "$value": "{color.neutral.grey-air.gust.dark.d2}", "$type": "color" },
+          "pressed":  { "$value": "{color.neutral.grey-air.gust.dark.d3}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m1}", "$type": "color" }
+        },
+        "surface": {
+          "default":  { "$value": "{color.neutral.grey-air.gust.light.l2}", "$type": "color" },
+          "hovered":  { "$value": "{color.neutral.grey-air.gust.light.l3}", "$type": "color" },
+          "pressed":  { "$value": "{color.neutral.grey-air.gust.light.l4}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.light.l2}", "$type": "color" }
+        },
+        "content": {
+          "on-foreground": {
+            "default":  { "$value": "{color.neutral.grey-air.gust.light.l1}", "$type": "color" },
+            "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m2}", "$type": "color" }
+          },
+          "on-surface": {
+            "default":  { "$value": "{color.neutral.grey-air.gust.dark.d1}", "$type": "color" },
+            "accent":   { "$value": "{color.neutral.grey-air.gust.dark.d2}", "$type": "color" },
+            "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m1}", "$type": "color" }
+          }
+        },
+        "border": {
+          "default":  { "$value": "{color.neutral.grey-air.gust.light.l6}", "$type": "color" },
+          "accent":   { "$value": "{color.neutral.grey-air.gust.medium.m1}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.light.l4}", "$type": "color" }
+        }
+      },
+      "danger": {
+        "foreground": {
+          "default":  { "$value": "{color.core.danger.07}", "$type": "color" },
+          "hovered":  { "$value": "{color.core.danger.08}", "$type": "color" },
+          "pressed":  { "$value": "{color.core.danger.09}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m1}", "$type": "color" }
+        },
+        "surface": {
+          "default":  { "$value": "{color.core.danger.07}", "$type": "color" },
+          "hovered":  { "$value": "{color.core.danger.08}", "$type": "color" },
+          "pressed":  { "$value": "{color.core.danger.09}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.light.l4}", "$type": "color" }
+        },
+        "content": {
+          "on-foreground": {
+            "default":  { "$value": "{color.neutral.grey-air.gust.light.l1}", "$type": "color" },
+            "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m2}", "$type": "color" }
+          },
+          "on-surface": {
+            "default":  { "$value": "{color.core.danger.07}", "$type": "color" },
+            "accent":   { "$value": "{color.core.danger.08}", "$type": "color" },
+            "disabled": { "$value": "{color.neutral.grey-air.gust.medium.m1}", "$type": "color" }
+          }
+        },
+        "border": {
+          "default":  { "$value": "{color.core.danger.07}", "$type": "color" },
+          "accent":   { "$value": "{color.core.danger.08}", "$type": "color" },
+          "disabled": { "$value": "{color.neutral.grey-air.gust.light.l5}", "$type": "color" }
+        }
+      }
+    }
+  }
+}

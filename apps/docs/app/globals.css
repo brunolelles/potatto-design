@@ -1,0 +1,138 @@
+/* ─── Potatto Tokens ─────────────────────────────────────────────────────────
+   Temporariamente definidos inline até o pipeline Style Dictionary estar rodando.
+   Gerados pelo @potatto/tokens quando o build estiver configurado.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Neutral (Grey Air / Gust) */
+  --pt-color-neutral-l1: oklch(97% 0.004 240);
+  --pt-color-neutral-l2: oklch(94% 0.005 240);
+  --pt-color-neutral-l3: oklch(91% 0.006 240);
+  --pt-color-neutral-l4: oklch(88% 0.007 240);
+  --pt-color-neutral-l5: oklch(84% 0.008 240);
+  --pt-color-neutral-l6: oklch(80% 0.009 240);
+  --pt-color-neutral-m1: oklch(64% 0.012 240);
+  --pt-color-neutral-m2: oklch(58% 0.013 240);
+  --pt-color-neutral-m3: oklch(52% 0.014 240);
+  --pt-color-neutral-d1: oklch(18% 0.010 240);
+  --pt-color-neutral-d2: oklch(15% 0.009 240);
+  --pt-color-neutral-d3: oklch(12% 0.008 240);
+
+  /* Core — Primary */
+  --pt-color-primary-07: oklch(55% 0.170 250);
+  --pt-color-primary-08: oklch(45% 0.165 250);
+  --pt-color-primary-09: oklch(36% 0.150 250);
+
+  /* Core — Danger */
+  --pt-color-danger-07: oklch(55% 0.170 25);
+  --pt-color-danger-08: oklch(45% 0.165 25);
+  --pt-color-danger-09: oklch(36% 0.150 25);
+
+  /* ─── Semantic — Button ───────────────────────────────────────────────── */
+  --pt-semantic-button-primary-bg:               var(--pt-color-primary-07);
+  --pt-semantic-button-primary-bg-hover:         var(--pt-color-primary-08);
+  --pt-semantic-button-primary-bg-pressed:       var(--pt-color-primary-09);
+  --pt-semantic-button-primary-bg-disabled:      var(--pt-color-neutral-l4);
+  --pt-semantic-button-primary-fg:               var(--pt-color-neutral-l1);
+  --pt-semantic-button-primary-fg-disabled:      var(--pt-color-neutral-m2);
+  --pt-semantic-button-primary-border:           var(--pt-color-primary-07);
+  --pt-semantic-button-primary-border-disabled:  var(--pt-color-neutral-l5);
+
+  --pt-semantic-button-secondary-bg:               transparent;
+  --pt-semantic-button-secondary-bg-hover:         var(--pt-color-neutral-l2);
+  --pt-semantic-button-secondary-bg-pressed:       var(--pt-color-neutral-l3);
+  --pt-semantic-button-secondary-bg-disabled:      transparent;
+  --pt-semantic-button-secondary-fg:               var(--pt-color-primary-07);
+  --pt-semantic-button-secondary-fg-disabled:      var(--pt-color-neutral-m2);
+  --pt-semantic-button-secondary-border:           var(--pt-color-primary-07);
+  --pt-semantic-button-secondary-border-disabled:  var(--pt-color-neutral-l5);
+
+  --pt-semantic-button-ghost-bg:               transparent;
+  --pt-semantic-button-ghost-bg-hover:         var(--pt-color-neutral-l2);
+  --pt-semantic-button-ghost-bg-pressed:       var(--pt-color-neutral-l3);
+  --pt-semantic-button-ghost-bg-disabled:      transparent;
+  --pt-semantic-button-ghost-fg:               var(--pt-color-neutral-d1);
+  --pt-semantic-button-ghost-fg-disabled:      var(--pt-color-neutral-m2);
+  --pt-semantic-button-ghost-border:           transparent;
+  --pt-semantic-button-ghost-border-disabled:  transparent;
+
+  --pt-semantic-button-danger-bg:               var(--pt-color-danger-07);
+  --pt-semantic-button-danger-bg-hover:         var(--pt-color-danger-08);
+  --pt-semantic-button-danger-bg-pressed:       var(--pt-color-danger-09);
+  --pt-semantic-button-danger-bg-disabled:      var(--pt-color-neutral-l4);
+  --pt-semantic-button-danger-fg:               var(--pt-color-neutral-l1);
+  --pt-semantic-button-danger-fg-disabled:      var(--pt-color-neutral-m2);
+  --pt-semantic-button-danger-border:           var(--pt-color-danger-07);
+  --pt-semantic-button-danger-border-disabled:  var(--pt-color-neutral-l5);
+
+  /* ─── Semantic — Surface / Content / Border ───────────────────────────── */
+  --pt-semantic-surface-page:      var(--pt-color-neutral-l1);
+  --pt-semantic-surface-layer:     var(--pt-color-neutral-l2);
+  --pt-semantic-surface-container: var(--pt-color-neutral-l3);
+  --pt-semantic-content-default:   var(--pt-color-neutral-d2);
+  --pt-semantic-content-muted:     var(--pt-color-neutral-m3);
+  --pt-semantic-content-accent:    var(--pt-color-neutral-d1);
+  --pt-semantic-border-default:    var(--pt-color-neutral-l5);
+  --pt-semantic-border-accent:     var(--pt-color-neutral-m1);
+
+  /* ─── Spacing ─────────────────────────────────────────────────────────── */
+  --pt-spacing-1: 0.25rem;
+  --pt-spacing-2: 0.5rem;
+  --pt-spacing-3: 0.75rem;
+  --pt-spacing-4: 1rem;
+  --pt-spacing-5: 1.25rem;
+  --pt-spacing-6: 1.5rem;
+  --pt-spacing-8: 2rem;
+
+  /* ─── Radius ──────────────────────────────────────────────────────────── */
+  --pt-radius-sm:   4px;
+  --pt-radius-md:   6px;
+  --pt-radius-lg:   8px;
+  --pt-radius-xl:   12px;
+  --pt-radius-full: 9999px;
+
+  /* ─── Button sizes ────────────────────────────────────────────────────── */
+  --pt-size-button-sm: 32px;
+  --pt-size-button-md: 40px;
+  --pt-size-button-lg: 48px;
+
+  /* ─── Typography ──────────────────────────────────────────────────────── */
+  --pt-font-sans:     -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --pt-font-mono:     'SF Mono', 'Geist Mono', monospace;
+  --pt-font-size-xs:  0.75rem;
+  --pt-font-size-sm:  0.875rem;
+  --pt-font-size-md:  0.9375rem;
+  --pt-font-size-lg:  1rem;
+  --pt-font-size-xl:  1.125rem;
+  --pt-font-size-2xl: 1.5rem;
+  --pt-font-size-3xl: 2rem;
+
+  /* ─── Docs layout ─────────────────────────────────────────────────────── */
+  --docs-sidebar-width: 240px;
+  --docs-content-max:   800px;
+}
+
+/* ─── Theme override — Fried ─────────────────────────────────────────────── */
+[data-theme='fried'] {
+  --pt-color-primary-07: oklch(62% 0.185 90);
+  --pt-color-primary-08: oklch(52% 0.175 90);
+  --pt-color-primary-09: oklch(42% 0.160 90);
+}
+
+/* ─── Reset ──────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { max-width: 100vw; overflow-x: hidden; }
+
+body {
+  font-family:      var(--pt-font-sans);
+  background-color: var(--pt-semantic-surface-page);
+  color:            var(--pt-semantic-content-default);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }

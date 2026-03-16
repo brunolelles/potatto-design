@@ -1,0 +1,19 @@
+{
+  "name": "potatto-design",
+  "private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "build:tokens": "pnpm --filter @potatto/tokens build",
+    "build:react": "pnpm --filter @potatto/react build",
+    "build": "pnpm build:tokens && pnpm build:react",
+    "dev": "pnpm --filter @potatto/docs dev",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

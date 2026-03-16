@@ -1,0 +1,60 @@
+{
+  "semantic": {
+    "button": {
+      "primary": {
+        "bg":             { "$value": "{interactive.action.primary.surface.default}", "$type": "color" },
+        "bg-hover":       { "$value": "{interactive.action.primary.surface.hovered}", "$type": "color" },
+        "bg-pressed":     { "$value": "{interactive.action.primary.surface.pressed}", "$type": "color" },
+        "bg-disabled":    { "$value": "{interactive.action.primary.surface.disabled}", "$type": "color" },
+        "fg":             { "$value": "{interactive.action.primary.content.on-foreground.default}", "$type": "color" },
+        "fg-disabled":    { "$value": "{interactive.action.primary.content.on-foreground.disabled}", "$type": "color" },
+        "border":         { "$value": "{interactive.action.primary.border.default}", "$type": "color" },
+        "border-disabled":{ "$value": "{interactive.action.primary.border.disabled}", "$type": "color" }
+      },
+      "secondary": {
+        "bg":             { "$value": "transparent", "$type": "color" },
+        "bg-hover":       { "$value": "{display.standard.neutral.surface.layer}", "$type": "color" },
+        "bg-pressed":     { "$value": "{display.standard.neutral.surface.container}", "$type": "color" },
+        "bg-disabled":    { "$value": "transparent", "$type": "color" },
+        "fg":             { "$value": "{interactive.action.primary.content.on-surface.default}", "$type": "color" },
+        "fg-disabled":    { "$value": "{interactive.action.primary.content.on-surface.disabled}", "$type": "color" },
+        "border":         { "$value": "{interactive.action.primary.border.default}", "$type": "color" },
+        "border-disabled":{ "$value": "{interactive.action.primary.border.disabled}", "$type": "color" }
+      },
+      "ghost": {
+        "bg":             { "$value": "transparent", "$type": "color" },
+        "bg-hover":       { "$value": "{display.standard.neutral.surface.layer}", "$type": "color" },
+        "bg-pressed":     { "$value": "{display.standard.neutral.surface.container}", "$type": "color" },
+        "bg-disabled":    { "$value": "transparent", "$type": "color" },
+        "fg":             { "$value": "{interactive.action.neutral.content.on-surface.default}", "$type": "color" },
+        "fg-disabled":    { "$value": "{interactive.action.neutral.content.on-surface.disabled}", "$type": "color" },
+        "border":         { "$value": "transparent", "$type": "color" },
+        "border-disabled":{ "$value": "transparent", "$type": "color" }
+      },
+      "danger": {
+        "bg":             { "$value": "{interactive.action.danger.surface.default}", "$type": "color" },
+        "bg-hover":       { "$value": "{interactive.action.danger.surface.hovered}", "$type": "color" },
+        "bg-pressed":     { "$value": "{interactive.action.danger.surface.pressed}", "$type": "color" },
+        "bg-disabled":    { "$value": "{interactive.action.danger.surface.disabled}", "$type": "color" },
+        "fg":             { "$value": "{interactive.action.danger.content.on-foreground.default}", "$type": "color" },
+        "fg-disabled":    { "$value": "{interactive.action.danger.content.on-foreground.disabled}", "$type": "color" },
+        "border":         { "$value": "{interactive.action.danger.border.default}", "$type": "color" },
+        "border-disabled":{ "$value": "{interactive.action.danger.border.disabled}", "$type": "color" }
+      }
+    },
+    "surface": {
+      "page":      { "$value": "{display.standard.neutral.surface.surface}", "$type": "color" },
+      "layer":     { "$value": "{display.standard.neutral.surface.layer}", "$type": "color" },
+      "container": { "$value": "{display.standard.neutral.surface.container}", "$type": "color" }
+    },
+    "content": {
+      "default": { "$value": "{display.standard.neutral.content.default}", "$type": "color" },
+      "muted":   { "$value": "{display.standard.neutral.content.muted}", "$type": "color" },
+      "accent":  { "$value": "{display.standard.neutral.content.accent}", "$type": "color" }
+    },
+    "border": {
+      "default": { "$value": "{display.standard.neutral.border.default}", "$type": "color" },
+      "accent":  { "$value": "{display.standard.neutral.border.accent}", "$type": "color" }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.root {
+  display:       flex;
+  border:        1px solid var(--pt-semantic-border-default);
+  border-radius: var(--pt-radius-lg);
+  overflow:      hidden;
+  margin-bottom: var(--pt-spacing-8);
+}
+
+/* Preview area */
+.preview {
+  flex:             1;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  padding:          var(--pt-spacing-10);
+  background:       var(--pt-semantic-surface-page);
+  background-image: radial-gradient(var(--pt-semantic-border-default) 1px, transparent 1px);
+  background-size:  20px 20px;
+  min-height:       200px;
+}
+
+/* Controls panel */
+.controls {
+  width:          220px;
+  flex-shrink:    0;
+  border-left:    1px solid var(--pt-semantic-border-default);
+  background:     var(--pt-semantic-surface-layer);
+  padding:        var(--pt-spacing-4);
+  display:        flex;
+  flex-direction: column;
+  gap:            var(--pt-spacing-4);
+}
+
+.controlGroup {
+  display:        flex;
+  flex-direction: column;
+  gap:            var(--pt-spacing-2);
+}
+
+.label {
+  font-size:   var(--pt-font-size-xs);
+  font-weight: 600;
+  color:       var(--pt-semantic-content-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Select */
+.select {
+  padding:       var(--pt-spacing-2) var(--pt-spacing-3);
+  border:        1px solid var(--pt-semantic-border-default);
+  border-radius: var(--pt-radius-md);
+  background:    var(--pt-semantic-surface-page);
+  color:         var(--pt-semantic-content-default);
+  font-size:     var(--pt-font-size-sm);
+  cursor:        pointer;
+  width:         100%;
+}
+
+/* Text input */
+.input {
+  padding:       var(--pt-spacing-2) var(--pt-spacing-3);
+  border:        1px solid var(--pt-semantic-border-default);
+  border-radius: var(--pt-radius-md);
+  background:    var(--pt-semantic-surface-page);
+  color:         var(--pt-semantic-content-default);
+  font-size:     var(--pt-font-size-sm);
+  width:         100%;
+}
+
+/* Pills */
+.pills {
+  display:   flex;
+  flex-wrap: wrap;
+  gap:       var(--pt-spacing-1);
+}
+
+.pill {
+  padding:       3px var(--pt-spacing-3);
+  border:        1px solid var(--pt-semantic-border-default);
+  border-radius: var(--pt-radius-full);
+  background:    var(--pt-semantic-surface-page);
+  color:         var(--pt-semantic-content-default);
+  font-size:     var(--pt-font-size-xs);
+  cursor:        pointer;
+  transition:    background 100ms ease, border-color 100ms ease, color 100ms ease;
+}
+
+.pill:hover {
+  background: var(--pt-semantic-surface-container);
+}
+
+.pillActive {
+  background:   var(--pt-semantic-button-primary-bg);
+  color:        var(--pt-semantic-button-primary-fg);
+  border-color: var(--pt-semantic-button-primary-border);
+}

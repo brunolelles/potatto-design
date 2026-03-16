@@ -1,0 +1,158 @@
+.header {
+  margin-bottom: var(--pt-spacing-10);
+}
+
+.meta {
+  display:        flex;
+  align-items:    center;
+  gap:            var(--pt-spacing-2);
+  margin-bottom:  var(--pt-spacing-3);
+}
+
+.category {
+  font-size:   var(--pt-font-size-xs);
+  font-weight: 600;
+  color:       var(--pt-semantic-content-muted);
+}
+
+.status {
+  font-size:     var(--pt-font-size-xs);
+  font-weight:   600;
+  padding:       2px 8px;
+  border-radius: var(--pt-radius-full);
+  background:    oklch(85% 0.15 90);
+  color:         oklch(35% 0.16 90);
+}
+
+.status[data-status='done'] {
+  background: oklch(88% 0.12 145);
+  color:      oklch(35% 0.14 145);
+}
+
+.title {
+  font-size:   var(--pt-font-size-3xl);
+  font-weight: 700;
+  color:       var(--pt-semantic-content-accent);
+  margin-bottom: var(--pt-spacing-4);
+}
+
+.description {
+  font-size:  var(--pt-font-size-md);
+  color:      var(--pt-semantic-content-muted);
+  max-width:  600px;
+  line-height: 1.6;
+}
+
+/* Sections */
+.section {
+  margin-bottom: var(--pt-spacing-10);
+}
+
+.sectionTitle {
+  font-size:     var(--pt-font-size-xl);
+  font-weight:   600;
+  color:         var(--pt-semantic-content-accent);
+  margin-bottom: var(--pt-spacing-5);
+  padding-bottom: var(--pt-spacing-3);
+  border-bottom:  1px solid var(--pt-semantic-border-default);
+}
+
+/* Variant grid */
+.variantGrid {
+  display:        flex;
+  flex-direction: column;
+  gap:            var(--pt-spacing-5);
+}
+
+.variantRow {
+  display:     flex;
+  align-items: center;
+  gap:         var(--pt-spacing-6);
+}
+
+.variantLabel {
+  width:       100px;
+  font-size:   var(--pt-font-size-sm);
+  font-weight: 500;
+  color:       var(--pt-semantic-content-muted);
+  flex-shrink: 0;
+}
+
+.variantButtons {
+  display:     flex;
+  align-items: center;
+  gap:         var(--pt-spacing-3);
+  flex-wrap:   wrap;
+}
+
+/* Design decisions */
+.decisions {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   var(--pt-spacing-4);
+}
+
+.decision {
+  padding:       var(--pt-spacing-5);
+  background:    var(--pt-semantic-surface-layer);
+  border:        1px solid var(--pt-semantic-border-default);
+  border-radius: var(--pt-radius-lg);
+}
+
+.decision h3 {
+  font-size:     var(--pt-font-size-md);
+  font-weight:   600;
+  margin-bottom: var(--pt-spacing-2);
+  color:         var(--pt-semantic-content-accent);
+}
+
+.decision p {
+  font-size:   var(--pt-font-size-sm);
+  color:       var(--pt-semantic-content-muted);
+  line-height: 1.5;
+}
+
+.decision code {
+  font-family: var(--pt-font-mono);
+  font-size:   0.8em;
+  background:  var(--pt-semantic-surface-container);
+  padding:     1px 4px;
+  border-radius: var(--pt-radius-sm);
+}
+
+/* Token table */
+.tokenTable {
+  width:           100%;
+  border-collapse: collapse;
+  font-size:       var(--pt-font-size-sm);
+}
+
+.tokenTable th {
+  text-align:    left;
+  padding:       var(--pt-spacing-3) var(--pt-spacing-4);
+  background:    var(--pt-semantic-surface-layer);
+  border-bottom: 1px solid var(--pt-semantic-border-default);
+  font-weight:   600;
+  color:         var(--pt-semantic-content-muted);
+  font-size:     var(--pt-font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.tokenTable td {
+  padding:       var(--pt-spacing-3) var(--pt-spacing-4);
+  border-bottom: 1px solid var(--pt-semantic-border-default);
+  color:         var(--pt-semantic-content-default);
+  vertical-align: middle;
+}
+
+.tokenTable code {
+  font-family:   var(--pt-font-mono);
+  font-size:     0.85em;
+  background:    var(--pt-semantic-surface-layer);
+  padding:       2px 6px;
+  border-radius: var(--pt-radius-sm);
+  color:         var(--pt-semantic-content-accent);
+}
+
+.tokenTable tr:last-child td { border-bottom: none; }

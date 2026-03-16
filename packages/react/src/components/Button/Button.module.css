@@ -1,0 +1,107 @@
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+
+.button {
+  display:          inline-flex;
+  align-items:      center;
+  justify-content:  center;
+  gap:              var(--pt-spacing-2, 0.5rem);
+  border-radius:    var(--pt-radius-md, 6px);
+  border:           1px solid transparent;
+  font-family:      var(--pt-font-sans, system-ui, sans-serif);
+  font-weight:      500;
+  line-height:      1;
+  white-space:      nowrap;
+  cursor:           pointer;
+  transition:       background 120ms ease, color 120ms ease, border-color 120ms ease;
+  text-decoration:  none;
+  user-select:      none;
+}
+
+.button:focus-visible {
+  outline:        2px solid var(--pt-semantic-button-primary-border);
+  outline-offset: 2px;
+}
+
+.button[data-disabled],
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* ─── Sizes ─────────────────────────────────────────────────────────────────── */
+
+.sm {
+  height:       var(--pt-size-button-sm, 32px);
+  padding:      0 var(--pt-spacing-3, 0.75rem);
+  font-size:    var(--pt-font-size-sm, 0.875rem);
+}
+
+.md {
+  height:       var(--pt-size-button-md, 40px);
+  padding:      0 var(--pt-spacing-4, 1rem);
+  font-size:    var(--pt-font-size-md, 0.9375rem);
+}
+
+.lg {
+  height:       var(--pt-size-button-lg, 48px);
+  padding:      0 var(--pt-spacing-5, 1.25rem);
+  font-size:    var(--pt-font-size-lg, 1rem);
+}
+
+/* ─── Variants ──────────────────────────────────────────────────────────────── */
+
+/* Primary — filled */
+.primary {
+  background:   var(--pt-semantic-button-primary-bg);
+  color:        var(--pt-semantic-button-primary-fg);
+  border-color: var(--pt-semantic-button-primary-border);
+}
+.primary:hover:not(:disabled):not([data-disabled]) {
+  background: var(--pt-semantic-button-primary-bg-hover);
+}
+.primary:active:not(:disabled):not([data-disabled]) {
+  background: var(--pt-semantic-button-primary-bg-pressed);
+}
+
+/* Secondary — outlined */
+.secondary {
+  background:   var(--pt-semantic-button-secondary-bg);
+  color:        var(--pt-semantic-button-secondary-fg);
+  border-color: var(--pt-semantic-button-secondary-border);
+}
+.secondary:hover:not(:disabled):not([data-disabled]) {
+  background: var(--pt-semantic-button-secondary-bg-hover);
+}
+.secondary:active:not(:disabled):not([data-disabled]) {
+  background: var(--pt-semantic-button-secondary-bg-pressed);
+}
+
+/* Ghost — no border, no fill */
+.ghost {
+  background:   var(--pt-semantic-button-ghost-bg);
+  color:        var(--pt-semantic-button-ghost-fg);
+  border-color: var(--pt-semantic-button-ghost-border);
+}
+.ghost:hover:not(:disabled):not([data-disabled]) {
+  background: var(--pt-semantic-button-ghost-bg-hover);
+}
+.ghost:active:not(:disabled):not([data-disabled]) {
+  background: var(--pt-semantic-button-ghost-bg-pressed);
+}
+
+/* Danger */
+.danger {
+  background:   var(--pt-semantic-button-danger-bg);
+  color:        var(--pt-semantic-button-danger-fg);
+  border-color: var(--pt-semantic-button-danger-border);
+}
+.danger:hover:not(:disabled):not([data-disabled]) {
+  background: var(--pt-semantic-button-danger-bg-hover);
+}
+.danger:active:not(:disabled):not([data-disabled]) {
+  background: var(--pt-semantic-button-danger-bg-pressed);
+}

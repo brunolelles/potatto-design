@@ -1,0 +1,80 @@
+{
+  "display": {
+    "standard": {
+      "neutral": {
+        "surface": {
+          "foreground": { "$value": "{color.neutral.grey-air.gust.dark.d1}", "$type": "color" },
+          "surface":    { "$value": "{color.neutral.grey-air.gust.light.l1}", "$type": "color" },
+          "layer":      { "$value": "{color.neutral.grey-air.gust.light.l2}", "$type": "color" },
+          "container":  { "$value": "{color.neutral.grey-air.gust.light.l3}", "$type": "color" }
+        },
+        "content": {
+          "on-foreground": { "$value": "{color.neutral.grey-air.gust.light.l1}", "$type": "color" },
+          "default":       { "$value": "{color.neutral.grey-air.gust.dark.d2}", "$type": "color" },
+          "accent":        { "$value": "{color.neutral.grey-air.gust.dark.d4}", "$type": "color" },
+          "muted":         { "$value": "{color.neutral.grey-air.gust.medium.m3}", "$type": "color" }
+        },
+        "border": {
+          "default": { "$value": "{color.neutral.grey-air.gust.light.l5}", "$type": "color" },
+          "accent":  { "$value": "{color.neutral.grey-air.gust.medium.m1}", "$type": "color" }
+        }
+      },
+      "brand-main": {
+        "surface": {
+          "foreground": { "$value": "{color.brand.main.03}", "$type": "color" },
+          "surface":    { "$value": "{color.brand.main.01}", "$type": "color" },
+          "layer":      { "$value": "{color.brand.main.02}", "$type": "color" },
+          "container":  { "$value": "{color.brand.main.01}", "$type": "color" }
+        },
+        "content": {
+          "on-foreground": { "$value": "{color.neutral.grey-air.gust.dark.d1}", "$type": "color" },
+          "default":       { "$value": "{color.brand.main.05}", "$type": "color" },
+          "accent":        { "$value": "{color.brand.main.04}", "$type": "color" },
+          "muted":         { "$value": "{color.brand.main.02}", "$type": "color" }
+        },
+        "border": {
+          "default": { "$value": "{color.brand.main.02}", "$type": "color" },
+          "accent":  { "$value": "{color.brand.main.03}", "$type": "color" }
+        }
+      }
+    },
+    "feedback": {
+      "danger": {
+        "surface": {
+          "foreground": { "$value": "{color.core.danger.07}", "$type": "color" },
+          "surface":    { "$value": "{color.core.danger.01}", "$type": "color" },
+          "layer":      { "$value": "{color.core.danger.01}", "$type": "color" },
+          "container":  { "$value": "{color.core.danger.01}", "$type": "color" }
+        },
+        "content": {
+          "on-foreground": { "$value": "{color.neutral.grey-air.gust.light.l1}", "$type": "color" },
+          "default":       { "$value": "{color.core.danger.10}", "$type": "color" },
+          "accent":        { "$value": "{color.core.danger.07}", "$type": "color" },
+          "muted":         { "$value": "{color.core.danger.05}", "$type": "color" }
+        },
+        "border": {
+          "default": { "$value": "{color.core.danger.05}", "$type": "color" },
+          "accent":  { "$value": "{color.core.danger.07}", "$type": "color" }
+        }
+      },
+      "success": {
+        "surface": {
+          "foreground": { "$value": "{color.core.success.07}", "$type": "color" },
+          "surface":    { "$value": "{color.core.success.01}", "$type": "color" },
+          "layer":      { "$value": "{color.core.success.01}", "$type": "color" },
+          "container":  { "$value": "{color.core.success.01}", "$type": "color" }
+        },
+        "content": {
+          "on-foreground": { "$value": "{color.neutral.grey-air.gust.light.l1}", "$type": "color" },
+          "default":       { "$value": "{color.core.success.10}", "$type": "color" },
+          "accent":        { "$value": "{color.core.success.07}", "$type": "color" },
+          "muted":         { "$value": "{color.core.success.05}", "$type": "color" }
+        },
+        "border": {
+          "default": { "$value": "{color.core.success.05}", "$type": "color" },
+          "accent":  { "$value": "{color.core.success.07}", "$type": "color" }
+        }
+      }
+    }
+  }
+}
