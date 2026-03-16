@@ -1,7 +1,7 @@
-import { Playground } from '@/components/Playground'
 import { Button } from '@potatto/react'
-import type { ButtonVariant, ButtonSize } from '@potatto/react'
+import type { ButtonVariant } from '@potatto/react'
 import styles from './page.module.css'
+import { ButtonPlayground } from './ButtonPlayground'
 
 export const metadata = { title: 'Button — Potatto DS' }
 
@@ -22,27 +22,10 @@ export default function ButtonPage() {
         </p>
       </div>
 
-      {/* Playground */}
+      {/* Playground — Client Component */}
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Playground</h2>
-        <Playground
-          defaults={{ variant: 'primary', size: 'md', disabled: false, label: 'Button' }}
-          controls={[
-            { type: 'select',  label: 'Variant',  key: 'variant',  options: ['primary', 'secondary', 'ghost', 'danger'] },
-            { type: 'select',  label: 'Size',     key: 'size',     options: ['sm', 'md', 'lg'] },
-            { type: 'boolean', label: 'Disabled', key: 'disabled' },
-            { type: 'text',    label: 'Label',    key: 'label', placeholder: 'Button' },
-          ]}
-          render={(props) => (
-            <Button
-              variant={props.variant as ButtonVariant}
-              size={props.size as ButtonSize}
-              disabled={props.disabled as boolean}
-            >
-              {props.label as string || 'Button'}
-            </Button>
-          )}
-        />
+        <ButtonPlayground />
       </section>
 
       {/* Todas as variantes */}
@@ -63,7 +46,7 @@ export default function ButtonPage() {
         </div>
       </section>
 
-      {/* Quando usar */}
+      {/* Design decisions */}
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Design Decisions</h2>
         <div className={styles.decisions}>
@@ -91,7 +74,7 @@ export default function ButtonPage() {
           <div className={styles.decision}>
             <h3>Danger</h3>
             <p>
-              Ações destrutivas (delete, remove). Usa tokens
+              Ações destrutivas (delete, remove). Usa tokens{' '}
               <code>interactive.action.danger</code>. Sempre acompanhe
               de um modal de confirmação.
             </p>
@@ -99,7 +82,7 @@ export default function ButtonPage() {
         </div>
       </section>
 
-      {/* Tokens usados */}
+      {/* Tokens */}
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Tokens</h2>
         <table className={styles.tokenTable}>
